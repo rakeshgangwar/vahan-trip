@@ -100,7 +100,9 @@ class App extends Component {
       <div className="App">
         <Header />
         <InputArea tripIds={this.state.tripIds} getTripRoute={this.getRoute}/>
-        <GoogleMap />
+        <div style={{width: '100%', height: '400px'}}>
+          <GoogleMap />
+        </div>
       </div>
     );
   }
